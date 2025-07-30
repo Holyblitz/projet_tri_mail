@@ -1,14 +1,10 @@
-# Projet_démarchage_commercial
-
-projet_agent/
-├── data/
-│   ├── entreprises.csv
-│   └── entreprises_enrichies.csv
-├── agents/
-│   ├── agent_scraping.py
-│   ├── agent_email.py
-│   ├── agent_cleaner.py
-│   └── agent_mailer.py
-├── config/
-│   └── settings.yaml (emails, modèle de message, etc.)
-└── main.py (orchestrateur)
+# mail-assistant-local/
+│
+├── README.md           ← Présentation pro + cas d’usage
+├── main.py             ← Script principal (tri + prompt)
+├── config.py           ← Variables : modèle, login, filtres
+├── mail_utils.py       ← Extraction et parsing des mails
+├── prompts/            ← Prompts personnalisés
+│   └── tri_basique.txt
+├── data/               ← Exemple de mails (fictifs, anonymisés)
+└── requirements.txt    ← Dépendances (Python, model, etc.)
